@@ -12,7 +12,7 @@ sudo ip link add v-net-0 type bridge
 
 # Step 3: bring linux bridge up
 
-sudp ip link set dev v-net-0 up
+sudo ip link set dev v-net-0 up
 
 
 # Step 4: now i create virtual ethernet (veth) for connect each namespace with linux bridge
