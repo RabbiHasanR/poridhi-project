@@ -23,9 +23,10 @@
 # Create two namespace and connect with veth
 
 # Step 1: first i create two namespace
-`sudo ip netns add black`
-`sudo ip netns add white`
-
+```bash
+sudo ip netns add black
+sudo ip netns add white
+```
 # Step 2: then i create virtual ethernet interface for link two namespace
 `sudo ip link add veth-black type peer name veth-white`
 
